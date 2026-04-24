@@ -21,10 +21,5 @@ jobs:
           username: ubuntu
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
-          script: |
-            cd /home/ubuntu/bms || exit 1
-            pwd
-            ls -la
-            chmod +x deploy.sh
-            dos2unix deploy.sh || true
+          script:
             ./deploy.sh
