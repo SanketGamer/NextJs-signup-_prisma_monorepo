@@ -3,8 +3,9 @@
 git fetch origin
 git reset --hard origin/main
 
-/usr/bin/pnpm install
-/usr/bin/pnpm turbo run build
+pnpm install
+
+pnpm turbo run build
 
 cd apps/web
-/usr/bin/pnpm start
+pnpm start
