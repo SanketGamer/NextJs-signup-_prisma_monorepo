@@ -22,7 +22,7 @@ jobs:
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
           script: |
-            cd /home/ubuntu/practice_cicd || exit 1
+            cd /home/ubuntu/bms || exit 1
             pwd
             ls -la
             chmod +x deploy.sh
