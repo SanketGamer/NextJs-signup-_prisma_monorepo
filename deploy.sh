@@ -1,5 +1,8 @@
+#!/bin/bash
 
-git pull origin main
+git fetch origin
+git reset --hard origin/main
+
 npm install
 npm run build
 npm run start
