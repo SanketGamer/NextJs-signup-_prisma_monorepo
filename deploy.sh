@@ -1,11 +1,13 @@
 #!/bin/bash
 
+set -e
+
 git fetch origin
 git reset --hard origin/main
 
-pnpm install
+/usr/bin/pnpm install
 
-pnpm turbo run build
+/usr/bin/pnpm turbo run build
 
 cd apps/web
-pnpm start
+/usr/bin/pnpm start
